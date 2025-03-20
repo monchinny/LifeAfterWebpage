@@ -1,0 +1,83 @@
+
+:root {
+    --main-color: #FF6600;
+    --bg-color: rgba(0,0,0,0.8);
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.container {
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+.navbar {
+    display: flex;
+    padding: 1rem;
+    background: var(--main-color);
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+.login-section {
+    text-align: center;
+    padding: 2rem;
+}
+.login-btn {
+    background: var(--main-color);
+    border: none;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+.main-content {
+    padding: 2rem;
+}
+footer {
+    background: var(--main-color);
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+.query-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: var(--bg-color);
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.query-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .dropdown-content {
+        position: static;
+        display: none;
+    }
+    .query-dropdown:hover .dropdown-content {
+        display: none;
+    }
+    /* 添加汉堡菜单逻辑 */
+}

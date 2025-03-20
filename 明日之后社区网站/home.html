@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>明日之后社区</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<video autoplay muted loop id="bg-video">
+    <source src="login_bg.mp4" type="video/mp4">
+</video>
+
+<div class="container">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <a href="home.html">首页</a>
+        <div class="query-dropdown">
+            <a href="query.html">查询</a>
+            <div class="dropdown-content">
+                <div onclick="showQuery('daoju')">游戏道具查询</div>
+                <div onclick="showQuery('number_data')">数值查询</div>
+                <div onclick="showQuery('equipment')">装备查询</div>
+                <div onclick="showQuery('map')">地图查询</div>
+                <div onclick="showQuery('Npc')">NPC查询</div>
+            </div>
+        </div>
+        <a href="#gameplay">玩法</a>
+        <a href="#forum">论坛</a>
+    </nav>
+
+    <!-- 登录区 -->
+    <section class="login-section">
+        <button class="login-btn">手机登录</button>
+        <button class="login-btn">网易邮箱</button>
+        <button class="login-btn">Facebook</button>
+        <button class="login-btn">Google</button>
+    </section>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <h1>明日之后官方社区</h1>
+        <section id="official-contacts">
+            <h3>官方联系方式</h3>
+            <div>微信公众号 | 微博 | B站 | 抖音</div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>©2023 明日之后社区 | 联系方式: support@mrzh.com</p>
+    </footer>
+</div>
+
+
+</body>
+</html>
